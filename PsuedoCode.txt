@@ -1,7 +1,5 @@
-// Affan Thameem (40282375) 	
-// COMP 352 Programming A1
+
 // Pseudo Code for Three Oddonacci Calculators
-// Due Date: Friday, October 4th 2024
 
 Algorithm LinearOddonacci(n)
     Input: n, the position in the Oddonacci sequence
