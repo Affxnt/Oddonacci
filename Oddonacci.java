@@ -1,8 +1,3 @@
-//Written by: Affan Thameem (40282375) 
-//Class: COMP 352 Fall 2024
-//COMP 352 Programming A1
-//Due Date: Friday, October 4th 2024
-
 public class Oddonacci {
 
     // Linear recursive Oddonacci method
