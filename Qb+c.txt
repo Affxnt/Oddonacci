@@ -1,0 +1,21 @@
+//Affan Thameem (40282375) 	
+//COMP 352 Programming A1
+// Questions b and C
+// Due Date: Friday, October 4th 2024
+
+b) Briefly explain why the first algorithm is of exponential complexity and the second one is of linear complexity (more specifically, how the second algorithm resolves some specific bottleneck(s) of the first algorithm). You can write your answer in a separate file and submit it together with the other submissions.
+
+The first algorithm has an exponential complexity because for each non- base case of the function recursively calls itself three times. For any input n > 3, the function makes recursive calls to compute Oddonacci(n-1), Oddonacci(n-2) and Oddonacci(n-3). Each of these recursive calls in turn spawns three more recursive calls. Thus, the number of function calls grows exponentially with each step. 
+
+c) No, neither of my algorithms use tail recursion.
+
+In both the multiple recursive and linear recursive algorithms, the recursive calls are not in tail position because they do not return immediately after the recursive call. Instead, they perform additional operations after the recursion. For example, in the multiple-recursive version they need to sum the results of the recursive calls or in the linear-recursive version process the result of the recursive call. This means the function needs to keep track of the state in each previous call, storing temporary results in the call stack until all the recursion is complete.
+
+Can a tail-recursive version of Oddonacci calculator be designed?
+
+	i. If yes; provide the idea of how this can be achieved. Bonus mark will be given if you
+	implement this tail-recursive solution.
+
+	Yes, this algorithm can be implemented using tail recursion.
+
+	In a tail-recursive version of the Oddonacci algorithm, we can avoid the need to track intermediate states by passing the current state as parameters to the recursive function. Instead of calculating the Oddonacci numbers after the recursive call, we can collect the values directly in the parameters and ensure that the recursive call is the last operation performed by the function. My implementation can be seen in the source code and the in the pseudo code text file with the results in OddOut.txt file. 
